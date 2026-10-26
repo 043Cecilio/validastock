@@ -1,0 +1,18 @@
+# Dependências
+node_modules/
+**/node_modules/
+
+# Variáveis de ambiente (nunca subir senhas reais)
+.env
+**/.env
+*.env.local
+
+# Build de produção
+dist/
+**/dist/
+build/
+
+# Logs e arquivos de sistema
+npm-debug.log*
+.DS_Store
+Thumbs.db
