@@ -36,7 +36,7 @@
 
 ---
 
-## 🎯 O Problema
+## O Problema
 
 Pequenos mercados, padarias, farmácias de manipulação, clínicas odontológicas/estéticas e restaurantes costumam controlar o estoque em planilhas que somam apenas a **quantidade total** de um item, por exemplo *"40 caixas de leite"*.
 
@@ -45,7 +45,7 @@ O que essa soma esconde é que **10 caixas vencem em 3 dias** e **30 vencem em 2
 - 💸 **Prejuízo financeiro direto** com descartes de produtos vencidos;
 - ⚠️ **Alto risco sanitário** pela possibilidade de venda ou uso de itens fora da validade.
 
-## 💡 A Solução
+## A Solução
 
 O **ValidaStock** é um sistema Full-Stack que:
 
@@ -58,7 +58,7 @@ O **ValidaStock** é um sistema Full-Stack que:
 
 ---
 
-## 🧰 Stack Tecnológica
+##  Stack Tecnológica
 
 | Camada | Tecnologias |
 |---|---|
@@ -69,7 +69,7 @@ O **ValidaStock** é um sistema Full-Stack que:
 
 ---
 
-## 🏛️ Decisões de Engenharia e Arquitetura
+## Decisões de Engenharia e Arquitetura
 
 ### 1. Isolamento de Domínio e Algoritmo FEFO + FIFO
 📁 `backend/src/domain/fefo.ts`
