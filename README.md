@@ -49,12 +49,12 @@ O que essa soma esconde é que **10 caixas vencem em 3 dias** e **30 vencem em 2
 
 O **ValidaStock** é um sistema Full-Stack que:
 
-- ✅ Gerencia entradas por **Lote** e **Data de Validade**;
-- ✅ Aplica o algoritmo **FEFO** (*First Expired, First Out*, o primeiro que vence é o primeiro que sai) nas baixas de estoque;
-- ✅ **Bloqueia lotes vencidos** em saídas de consumo normais;
-- ✅ Oferece um **simulador visual de alocação**, mostrando de quais lotes a baixa sairá antes de efetivá-la;
-- ✅ Gera um **painel analítico de risco de vencimento** (Vencidos, 0–7, 8–15 e 16–30 dias);
-- ✅ Entrega um **relatório financeiro de Consumo vs. Perdas**.
+- [x] Gerencia entradas por **Lote** e **Data de Validade**;
+- [x] Aplica o algoritmo **FEFO** (*First Expired, First Out*, o primeiro que vence é o primeiro que sai) nas baixas de estoque;
+- [x] **Bloqueia lotes vencidos** em saídas de consumo normais;
+- [x] Oferece um **simulador visual de alocação**, mostrando de quais lotes a baixa sairá antes de efetivá-la;
+- [x] Gera um **painel analítico de risco de vencimento** (Vencidos, 0–7, 8–15 e 16–30 dias);
+- [x] Entrega um **relatório financeiro de Consumo vs. Perdas**.
 
 ---
 
