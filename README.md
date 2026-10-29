@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📦 ValidaStock
+# ValidaStock
 
 ### Controle de Estoque Perecível por Lote, Validade (FEFO) e Prevenção de Perdas
 
@@ -20,7 +20,7 @@
 
 ---
 
-## 📑 Sumário
+## Sumário
 
 - [O Problema](#-o-problema)
 - [A Solução](#-a-solução)
@@ -162,7 +162,7 @@ erDiagram
 
 ---
 
-## 🧪 Testes Unitários
+## Testes Unitários
 
 Os testes ficam em `backend/tests/fefo.spec.ts` (**Vitest**) e cobrem **5 cenários de borda** do algoritmo FEFO:
 
@@ -181,7 +181,7 @@ npm test
 
 ---
 
-## 🔌 API
+## API
 
 **Base URL:** `http://localhost:3333/api`
 
@@ -238,7 +238,7 @@ npm test
 
 ---
 
-## 🗂️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```text
 validastock/
@@ -272,7 +272,7 @@ validastock/
 
 ---
 
-## 🚀 Como Rodar o Projeto
+## Como Rodar o Projeto
 
 ### Pré-requisitos
 
@@ -329,9 +329,9 @@ Acesse: **http://localhost:5173**
 
 ---
 
-## 🗺️ Roadmap de Evolução
+## Roadmap de Evolução
 
-### ✅ Entregue no MVP
+### Entregue no MVP
 
 - [x] Cadastro de categorias, produtos e lotes com data de validade
 - [x] Algoritmo FEFO com desempate FIFO e consumo fracionado entre lotes
@@ -343,7 +343,7 @@ Acesse: **http://localhost:5173**
 - [x] Relatório financeiro de Consumo vs. Perdas com histórico auditado
 - [x] Testes unitários de domínio com Vitest
 
-### 🔭 Próximos passos
+### Próximos passos
 
 - [ ] **Leitura de XML de NF-e** para cadastro automático de lotes de entrada
 - [ ] **Sugestão de promoção automática** para lotes na faixa de 15 dias
@@ -351,7 +351,7 @@ Acesse: **http://localhost:5173**
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Gabriel Cecílio**
 
