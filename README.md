@@ -42,8 +42,8 @@ Pequenos mercados, padarias, farmácias de manipulação, clínicas odontológic
 
 O que essa soma esconde é que **10 caixas vencem em 3 dias** e **30 vencem em 25 dias**. O resultado é:
 
-- 💸 **Prejuízo financeiro direto** com descartes de produtos vencidos;
-- ⚠️ **Alto risco sanitário** pela possibilidade de venda ou uso de itens fora da validade.
+-  **Prejuízo financeiro direto** com descartes de produtos vencidos;
+-  **Alto risco sanitário** pela possibilidade de venda ou uso de itens fora da validade.
 
 ## A Solução
 
