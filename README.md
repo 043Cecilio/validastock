@@ -353,7 +353,7 @@ Acesse: **http://localhost:5173**
 
 ## Autor
 
-**Gabriel Cecílio**
+**Gabriel Cecilio Menezes**
 
 [![GitHub](https://img.shields.io/badge/GitHub-043Cecilio-181717?style=for-the-badge&logo=github)](https://github.com/043Cecilio)
 
