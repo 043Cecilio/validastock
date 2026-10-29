@@ -72,7 +72,7 @@ O **ValidaStock** é um sistema Full-Stack que:
 ## Decisões de Engenharia e Arquitetura
 
 ### 1. Isolamento de Domínio e Algoritmo FEFO + FIFO
-📁 `backend/src/domain/fefo.ts`
+ `backend/src/domain/fefo.ts`
 
 A função pura `allocateFefoBatches` é **desacoplada do banco de dados**, o que permite testá-la em milissegundos, sem mocks de infraestrutura.
 
@@ -82,13 +82,13 @@ A função pura `allocateFefoBatches` é **desacoplada do banco de dados**, o qu
 - **Normalização de datas em UTC (`toStartOfDayUTC`):** evita bugs clássicos de fuso horário (ex.: GMT-3) ao comparar datas de validade.
 
 ### 2. Controle de Concorrência e Transações Atômicas
-📁 `backend/src/services/stockService.ts`
+ `backend/src/services/stockService.ts`
 
 - A baixa de estoque usa `prisma.$transaction` com nível de isolamento `Prisma.TransactionIsolationLevel.Serializable`, evitando *race conditions* e **saldo negativo** em requisições simultâneas.
 - Uma **trava otimista adicional** no `updateMany` valida `currentQuantity: { gte: alloc.takenQuantity }` no exato momento do decremento.
 
 ### 3. Modelagem Relacional Voltada à Auditoria Financeira
-📁 `backend/prisma/schema.prisma`
+ `backend/prisma/schema.prisma`
 
 - **Valores monetários em centavos** (`unitCostInCents: Int`), eliminando erros de precisão de ponto flutuante (IEEE 754).
 - **Rastreabilidade em dois níveis:**
@@ -97,13 +97,13 @@ A função pura `allocateFefoBatches` é **desacoplada do banco de dados**, o qu
 - **Índice composto** `@@index([productId, expirationDate, currentQuantity])` na tabela `Batch`, otimizando a query do FEFO.
 
 ### 4. Simulador de Alocação FEFO
-📌 `POST /api/stock/fefo-preview`
+ `POST /api/stock/fefo-preview`
 
 Permite ao operador ver na tela **exatamente de quais lotes e em quais quantidades** o algoritmo retirará os produtos, antes de efetivar a transação no banco.
 
 ---
 
-## 📊 Diagramas
+##  Diagramas
 
 ### Fluxo de decisão do algoritmo FEFO
 
@@ -158,7 +158,7 @@ erDiagram
     }
 ```
 
-> ℹ️ O diagrama apresenta as entidades e os campos de maior relevância para o domínio. A definição completa está em [`backend/prisma/schema.prisma`](./backend/prisma/schema.prisma).
+>  O diagrama apresenta as entidades e os campos de maior relevância para o domínio. A definição completa está em [`backend/prisma/schema.prisma`](./backend/prisma/schema.prisma).
 
 ---
 
